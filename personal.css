@@ -1,28 +1,46 @@
-/* Float photo */
+/* Use sans-serif font for everything */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* Center the page title */
+h1 {
+  text-align: center;
+}
+
+/* Float the photo to the right */
 img {
   float: right;
-  margin: 20px;
   width: 150px;
+  margin: 10px;
   border-radius: 10px;
 }
 
-/* Make columns look better */
-div {
-  border: 1px solid #ccc;
-  padding: 15px;
+/* Flexbox container for the layout */
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px; /* adds spacing between columns */
+  flex-wrap: wrap; /* makes layout responsive */
+}
+
+/* Style for each column */
+.column {
+  flex: 1;
+  min-width: 250px;
   margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
-/* Make all text use sans-serif font */
-body {
-  font-family: sans-serif;
-}
-
-/* Hover effect for links */
+/* Links hover effect */
 a:hover {
   color: white;
   background-color: #007BFF;
-  padding: 2px 4px;
   text-decoration: none;
+  padding: 2px 4px;
 }
