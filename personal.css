@@ -1,0 +1,28 @@
+/* Float photo */
+img {
+  float: right;
+  margin: 20px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* Make columns look better */
+div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Make all text use sans-serif font */
+body {
+  font-family: sans-serif;
+}
+
+/* Hover effect for links */
+a:hover {
+  color: white;
+  background-color: #007BFF;
+  padding: 2px 4px;
+  text-decoration: none;
+}
