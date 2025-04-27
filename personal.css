@@ -1,46 +1,67 @@
-/* Use sans-serif font for everything */
+/* Set font for the whole page */
 body {
   font-family: sans-serif;
+  margin: 0;
   padding: 20px;
+  background-color: #f9f9f9;
 }
 
-/* Center the page title */
+/* Box around the entire page content */
+.page-container {
+  border: 1px solid #007BFF;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: white;
+}
+
+/* Center and style the header */
 h1 {
-  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-/* Float the photo to the right */
-img {
-  float: right;
-  width: 150px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-/* Flexbox container for the layout */
+/* Flexbox container */
 .flexbox-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px; /* adds spacing between columns */
-  flex-wrap: wrap; /* makes layout responsive */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Style for each column */
 .column {
   flex: 1;
   min-width: 250px;
-  margin: 10px;
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
-/* Links hover effect */
+/* Image styling inside About Me */
+.column img {
+  width: 120px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Styling for lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Hover effect for links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
 a:hover {
   color: white;
   background-color: #007BFF;
-  text-decoration: none;
-  padding: 2px 4px;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
